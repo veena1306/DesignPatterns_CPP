@@ -6,6 +6,9 @@ class Singleton
   
   public :
   static Singleton* getInstance();
+  singleton(const singleton &) = delete;
+  singleton& operator=(const singleton &) = delete;
+
 };
 
 Singleton::Singleton()
